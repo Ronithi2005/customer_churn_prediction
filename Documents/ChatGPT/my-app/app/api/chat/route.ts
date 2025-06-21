@@ -1,0 +1,13 @@
+import { google } from "@ai-sdk/google";
+import { streamText } from "ai";
+
+export const maxDuration = 30;
+
+export async function POST(req: Request) {
+  const { messages } = await req.json();
+  const result = await streamText({
+    model: google("gemini-2.0-flash"),
+    messages,
+  });
+  return result.toAIStreamResponse(); // ✅ This is the correct one
+}
