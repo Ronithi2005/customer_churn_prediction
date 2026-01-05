@@ -38,13 +38,18 @@
       <div class="about-content">
         <div class="text-section">
           <p>
-           Hi, I’m Vanshika Yadav, a Web Developer & AI Enthusiast currently pursuing my Bachelor of Engineering in Artificial Intelligence at Newton School of Technology, Rishihood University.
+            Hi, I’m Vanshika Yadav, a Web Developer & AI Enthusiast currently pursuing my Bachelor of Engineering in
+            Artificial Intelligence at Newton School of Technology, Rishihood University.
 
-I specialize in building modern, scalable web applications using React, Node.js, JavaScript, HTML/CSS, and have hands-on experience with databases like MySQL and MongoDB. Alongside web development, I actively work with LLMs and AI agent–based projects, exploring how intelligent systems can solve real-world problems.
+            I specialize in building modern, scalable web applications using React, Node.js, JavaScript, HTML/CSS, and
+            have hands-on experience with databases like MySQL and MongoDB. Alongside web development, I actively work
+            with LLMs and AI agent–based projects, exploring how intelligent systems can solve real-world problems.
 
-With 350+ LeetCode problems solved, I bring strong problem-solving skills, a solid foundation in data structures and algorithms, and a mindset focused on writing efficient, clean, and maintainable code.
+            With 350+ LeetCode problems solved, I bring strong problem-solving skills, a solid foundation in data
+            structures and algorithms, and a mindset focused on writing efficient, clean, and maintainable code.
 
-I’m a dedicated learner who enjoys turning ideas into impactful products, continuously improving my skills, and staying curious about emerging technologies in AI, full-stack development, and system design.
+            I’m a dedicated learner who enjoys turning ideas into impactful products, continuously improving my skills,
+            and staying curious about emerging technologies in AI, full-stack development, and system design.
           </p>
 
           <!-- Tech stack line -->
@@ -206,7 +211,8 @@ I’m a dedicated learner who enjoys turning ideas into impactful products, cont
 
       <!-- Project 5 -->
       <a href="https://connectwithvanshika.github.io/To-Do-List/" class="project-card" target="_blank">
-        <div class="project-image" style="background-image: url('assets/high-angle-list-notepad-with-glasses-pen_23-2148443786.avif');"></div>
+        <div class="project-image"
+          style="background-image: url('assets/high-angle-list-notepad-with-glasses-pen_23-2148443786.avif');"></div>
         <div class="project-info">
           <h3>To-Do List</h3>
           <p>A simple and elegant to-do list web app to help users manage daily tasks with ease and style.</p>
@@ -220,7 +226,8 @@ I’m a dedicated learner who enjoys turning ideas into impactful products, cont
 
       <!-- Project 6 -->
       <a href="https://connectwithvanshika.github.io/Card-Design/" class="project-card" target="_blank">
-        <div class="project-image" style="background-image: url('./assets/cute-design-business-card-vector-37537173.avif');"></div>
+        <div class="project-image"
+          style="background-image: url('./assets/cute-design-business-card-vector-37537173.avif');"></div>
         <div class="project-info">
           <h3>Card Design</h3>
           <p>Simple and elegant Card Design</p>
@@ -253,12 +260,26 @@ I’m a dedicated learner who enjoys turning ideas into impactful products, cont
     <h2 class="contact-title">Contact <span>Me</span></h2>
 
     <div class="contact-container">
-      <form class="contact-form">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="text" placeholder="Phone Number" />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Your Message" rows="6" required></textarea>
+      <form class="contact-form" method="POST">
+        <!-- 
+          IMPORTANT: Get your Web3Forms Access Key
+          1. Visit https://web3forms.com/
+          2. Sign up with vanshika.connects@gmail.com
+          3. Verify your email
+          4. Copy your access key from the dashboard
+          5. Replace YOUR_ACCESS_KEY_HERE below with your actual key
+        -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+        <!-- Optional: Redirect after submission (or use JavaScript for inline message) -->
+        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="phone" placeholder="Phone Number" />
+        <input type="text" name="subject_line" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
         <button type="submit">Send Message</button>
       </form>
 
@@ -283,6 +304,8 @@ I’m a dedicated learner who enjoys turning ideas into impactful products, cont
   </section>
 
 
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>
