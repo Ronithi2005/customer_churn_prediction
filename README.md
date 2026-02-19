@@ -1,47 +1,48 @@
-# Customer Churn Prediction App
+# Customer Churn Prediction using Machine Learning
 
-This is a machine learning web application built using Streamlit that predicts whether a customer is likely to churn or stay based on their demographic and service usage details. The project demonstrates an end-to-end machine learning workflow including preprocessing, model building, and deployment with an interactive user interface.
+This project is a machine learning web application that predicts whether a customer is likely to churn or stay based on customer demographics, services, and billing information. The application is built using Streamlit and demonstrates an end-to-end machine learning workflow including preprocessing, model training, and deployment with an interactive user interface.
 
 ## Project Overview
-Customer churn prediction helps businesses identify customers who are likely to leave their services. This application uses a trained machine learning model to analyze customer data and provide real-time predictions through a simple and clean web interface.
+Customer churn prediction helps businesses identify customers who are likely to discontinue their services. By analyzing customer behavior and service usage, this model provides real-time predictions that can help organizations improve customer retention and make data-driven decisions.
 
 ## Features
 - Real-time customer churn prediction  
 - Interactive and user-friendly interface  
 - Machine learning model integrated with Streamlit  
-- Clean UI with structured input sections  
+- Clean and structured input form  
 - Instant prediction results  
+- End-to-end ML workflow implementation  
 
 ## Machine Learning Workflow
 The project follows a complete machine learning pipeline:
 1. Data preprocessing and cleaning  
 2. Feature encoding  
-3. Model training using classification algorithm  
+3. Model training using a classification algorithm  
 4. Feature scaling using StandardScaler  
 5. Model saving using pickle  
 6. Deployment using Streamlit  
 
 ## Tech Stack
 Frontend and UI:
-- Streamlit
-- Custom CSS
+- Streamlit  
+- Custom CSS  
 
 Backend and Machine Learning:
-- Python
-- NumPy
-- Scikit-learn
-- Pickle
+- Python  
+- NumPy  
+- Scikit-learn  
+- Pickle  
 
 ## Project Structure
 customer_churn_prediction/
 
-├── .streamlit/
-│   └── config.toml          # Streamlit configuration
-├── app.py                   # Main Streamlit application
-├── churn_model.pkl          # Trained machine learning model
-├── scaler.pkl               # Saved scaler for preprocessing
-├── requirements.txt         # Project dependencies
-└── README.md
+├── .streamlit/  
+│   └── config.toml          # Streamlit configuration  
+├── app.py                   # Main Streamlit application  
+├── churn_model.pkl          # Trained machine learning model  
+├── scaler.pkl               # Saved scaler for preprocessing  
+├── requirements.txt         # Project dependencies  
+└── README.md  
 
 ## Installation and Setup
 
@@ -50,7 +51,7 @@ git clone https://github.com/connectwithvanshika/customer_churn_prediction.git
 cd customer_churn_prediction  
 
 ### Install dependencies
-pip install streamlit numpy scikit-learn  
+pip install -r requirements.txt  
 
 ### Run the application
 streamlit run app.py  
@@ -59,36 +60,39 @@ The application will open in your browser at:
 http://localhost:8501  
 
 ## Input Features Used
-The model takes the following inputs:
+The model uses the following inputs:
 - Gender  
 - Senior Citizen  
 - Partner and Dependents  
 - Tenure  
-- Phone and Internet Services  
-- Online Security and Backup  
+- Phone Service and Multiple Lines  
+- Internet Service  
+- Online Security and Online Backup  
 - Device Protection and Tech Support  
-- Streaming Services  
+- Streaming TV and Movies  
 - Contract Type  
+- Paperless Billing  
 - Payment Method  
 - Monthly Charges  
 - Total Charges  
 
 ## Prediction Output
-The application predicts whether a customer is likely to churn or stay. This can help businesses:
+The application predicts whether a customer is likely to churn or stay. This helps businesses:
 - Improve customer retention strategies  
 - Identify high-risk customers  
 - Make data-driven decisions  
 
 ## Future Improvements
-- Deploy the application on Streamlit Cloud  
-- Add model accuracy and evaluation metrics  
-- Include visual dashboards for insights  
-- Connect with real-time database  
-- Enhance UI and user experience  
+- Deploy application on cloud for public access  
+- Add model performance metrics and visualizations  
+- Integrate real-time database  
+- Enhance UI/UX design  
+- Add analytics dashboard  
 
 ## Team Members
 Vanshika Yadav  
-Riya Garg 
-Ronit Singh 
-Sankalp 
+Riya Garg  
+Ronit Singh  
+Sankalp  
 
+GitHub: https://github.com/connectwithvanshika
