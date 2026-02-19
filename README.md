@@ -35,11 +35,13 @@ Backend and Machine Learning:
 ## Project Structure
 customer_churn_prediction/
 
-├── app.py                 # Main Streamlit application  
-├── churn_model.pkl        # Trained machine learning model  
-├── scaler.pkl             # Saved scaler for preprocessing  
-├── .streamlit/config.toml # Streamlit configuration  
-└── README.md  
+├── .streamlit/
+│   └── config.toml          # Streamlit configuration
+├── app.py                   # Main Streamlit application
+├── churn_model.pkl          # Trained machine learning model
+├── scaler.pkl               # Saved scaler for preprocessing
+├── requirements.txt         # Project dependencies
+└── README.md
 
 ## Installation and Setup
 
