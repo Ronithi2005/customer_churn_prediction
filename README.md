@@ -218,7 +218,7 @@ Libraries:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
